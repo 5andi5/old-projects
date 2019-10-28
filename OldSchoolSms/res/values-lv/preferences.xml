@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- category -->
+    <string name="CategoryAboutTitle">Par</string>
+    <string name="CategoryAboutSummary">Autors: Antal Kocsis</string>
+    <string name="CategoryViewTitle">Attēlojums</string>
+    <string name="CategoryViewSummary">Ziņu saraksta attēlojums</string>
+    <string name="CategoryBehaviorReceivingTitle">Saņemšana</string>
+    <string name="CategoryBehaviorReceivingSummary">Saņemšanas iestatījumi</string>
+    <string name="CategoryBehaviorSendingTitle">Sūtīšana</string>
+    <string name="CategoryBehaviorSendingSummary">Sūtīšanas iestatījumi</string>
+
+    <string name="aboutTitle">Autors</string>
+    <string name="aboutSummary">Antal Kočiš</string>
+
+    <!-- entry -->
+    <string name="showMessageContentInListTitle">Rādīt ziņu</string>
+    <string name="showMessageContentInListSummary">Rādīt ziņas saturu sarakstā</string>
+    <string name="pageSizeTitle">Lapas izmērs</string>
+    <string name="pageSizeSummary">Maksimālais ziņu skaits sarakstā</string>
+    <string name="notifyOnNewSmsTitle">Jauna ziņa</string>
+    <string name="notifyOnNewSmsSummary">Paziņot, ja saņemta jauna ziņa</string>
+    <string name="popupOnNewSmsTitle">Iznirstošais logs</string>
+    <string name="popupOnNewSmsSummary">Rādīt iznirstošo logu, ja saņemta jauna ziņa</string>
+    <string name="notifyOnSuccessfulSendTitle">Paziņot par nosūtīšanu</string>
+    <string name="notifyOnSuccessfulSendSummary">Rādīt paziņojumu, ja ziņa veiksmīgi nosūtīta</string>
+    <string name="notifyOnDeliveryTitle">Paziņot par piegādi</string>
+    <string name="notifyOnDeliverySummary">Rādīt paziņojumu, ja ziņa veiksmīgi piegādāta</string>
+    <string name="vibratorPatternTitle">Vibrozvans</string>
+    <string name="vibratorPatternSummary">Virbrozvana ritms (formāts: vibrē,pauze,vibrē…)</string>
+    <string name="notificationSoundTitle">Skaņas signāls</string>
+    <string name="notificationSoundSummary">Skaņas signāls</string>
+
+</resources>

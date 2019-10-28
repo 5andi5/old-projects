@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDB9CDCE-4E66-407E-818C-C51B8C4A0B46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuessTheSong</RootNamespace>
+    <AssemblyName>GuessTheSong</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exception\InvalidGameSettingsException.cs" />
+    <Compile Include="Forms\TextDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TextDisplayForm.Designer.cs">
+      <DependentUpon>TextDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\GameSettings\BothTeamSettings.cs" />
+    <Compile Include="Settings\GameSettings\RoundSettingsBase.cs" />
+    <Compile Include="Settings\GameSettings\DirectoryNames.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\VideoRoundSettings.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\VideoRoundXPaths.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\SongRoundSettings.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\SongRoundXPaths.cs" />
+    <Compile Include="Settings\GameSettings\GameSettings.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\ImageRoundSettings.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\ImageRoundXPaths.cs" />
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\WordGuessingRoundXPaths.cs" />
+    <Compile Include="Settings\GameSettings\GameSettingsReader.cs" />
+    <Compile Include="Settings\GameSettings\SpecificRoundSettings\WordGuessingRoundSettings.cs" />
+    <Compile Include="Exception\GameSettingsNotFoundException.cs" />
+    <Compile Include="Settings\GameSettings\WordInfo.cs" />
+    <Compile Include="Forms\ImageDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageDisplayForm.Designer.cs">
+      <DependentUpon>ImageDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessExecution\AudioPlayerSettings.cs" />
+    <Compile Include="ProcessExecution\ProcessExecuter.cs" />
+    <Compile Include="ProcessExecution\ProcessSettingsBase.cs" />
+    <Compile Include="ProcessExecution\VideoPlayerSettings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageDisplayForm.resx">
+      <DependentUpon>ImageDisplayForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TextDisplayForm.resx">
+      <DependentUpon>TextDisplayForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StringEnterForm.resx">
+      <DependentUpon>StringEnterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ImageDisplayControl.resx">
+      <DependentUpon>ImageDisplayControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RoundUserControlBase.resx">
+      <DependentUpon>RoundUserControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SongPlayingControl.resx">
+      <DependentUpon>SongPlayingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\VideoPlayingControl.resx">
+      <DependentUpon>VideoPlayingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WordGuessingControl.resx">
+      <DependentUpon>WordGuessingControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Forms\StringEnterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StringEnterForm.Designer.cs">
+      <DependentUpon>StringEnterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\ProgramSettings\ProgramSettingsManager.cs" />
+    <Compile Include="Settings\ProgramSettings\ProgramSettings.cs" />
+    <Compile Include="Settings\ProgramSettings\SerializableFont.cs" />
+    <Compile Include="TeamsInfo.cs" />
+    <Compile Include="UserControls\ImageDisplayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ImageDisplayControl.Designer.cs">
+      <DependentUpon>ImageDisplayControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RoundUserControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SongPlayingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SongPlayingControl.Designer.cs">
+      <DependentUpon>SongPlayingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VideoPlayingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\VideoPlayingControl.Designer.cs">
+      <DependentUpon>VideoPlayingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WordGuessingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WordGuessingControl.Designer.cs">
+      <DependentUpon>WordGuessingControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\MinusTall.jpg" />
+    <None Include="Resources\Icons\PlusTall.jpg" />
+    <None Include="Resources\Icons\end.jpg" />
+    <None Include="Resources\Icons\nextSmall.jpg" />
+    <None Include="Resources\Icons\homeSmall.jpg" />
+    <None Include="Resources\Icons\previousSmall.jpg" />
+    <None Include="Resources\Icons\forwardSmall.jpg" />
+    <None Include="Resources\Icons\forward.jpg" />
+    <None Include="Resources\Icons\Camera.jpg" />
+    <None Include="Resources\Icons\Microphone.jpg" />
+    <None Include="Resources\Icons\X.jpg" />
+    <None Include="Resources\Icons\Question.jpg" />
+    <None Include="Resources\Icons\Plus.jpg" />
+    <None Include="Resources\Icons\Minus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\NewGames\SampleGame.xml" />
+    <Content Include="bin\Debug\ReadMe.txt">
+    </Content>
+    <None Include="Resources\Note.png" />
+    <None Include="Resources\ScoreBackground4.png" />
+    <None Include="Resources\ScoreBackground3.png" />
+    <None Include="Resources\ScoreBackground23.png" />
+    <None Include="Resources\ScoreBackground22.png" />
+    <None Include="Resources\ScoreBackground21.png" />
+    <None Include="Resources\ControlBackground1.png" />
+    <None Include="Resources\ControlBackground.png" />
+    <None Include="Resources\ControlBackgroundLeftRight.png" />
+    <None Include="Resources\Pattern.png" />
+    <None Include="Resources\ScoreBackground2.png" />
+    <None Include="Resources\ScoreBackground1.png" />
+    <None Include="Resources\ScoreBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Images\" />
+    <Folder Include="bin\Debug\PlayedGames\" />
+    <Folder Include="bin\Debug\Songs\" />
+    <Folder Include="bin\Debug\Videos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

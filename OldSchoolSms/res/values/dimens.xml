@@ -1,0 +1,7 @@
+
+    <resources>
+        <dimen name="widget_margin">8dp</dimen>
+        
+        <!-- SSI -->
+    	<dimen name="buttonFontSize">20sp</dimen>
+    </resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="newSms">Jauna ziņa</string>
+    <string name="multiDelete">Dzēst vairākas ziņas</string>
+    <string name="preferences">Iestatījumi</string>
+    <string name="view">Skatīt</string>
+    <string name="delete">Dzēst</string>
+    <string name="forward">Pārsūtīt</string>
+    <string name="replay">Atbildēt</string>
+    <string name="resend">Sūtīt atkārtoti</string>
+    <string name="copyText">Kopēt tekstu</string>
+    <string name="saveNumber">Saglabāt numuru</string>
+    <string name="call">Zvanīt</string>
+    <string name="cancel">Atcelt</string>
+    <string name="close">Aizvērt</string>
+    <string name="send">Sūtīt</string>
+    <string name="select">Kontakti</string>
+    <string name="enterNumber">Ievadīt numuru</string>
+    <string name="mark_as_read">Atzīmēt kā izlasītu</string>
+    <string name="emptyBody">Nav ievadīts ziņojuma teksts!</string>
+    <string name="emptyAddress">Nav ievadīts adresāts!</string>
+    <string name="alertNoPhoneNumber">Norādītajam kontaktam nav neviena numura!</string>
+    <string name="alertVibrationPattern">Nekorekts vibrācijas ritms. Korekts ritma formāts: vibrēt,pauze,vibrēt…</string>
+    <string name="questionDelete">Vai tiešām dzēst?</string>
+    <string name="questionResend">Vai tiešām pārsūtīt?</string>
+    <string name="questionSend">Vai tiešām sūtīt?</string>
+    
+    <!-- SMS status -->
+    <string name="SMS_STATUS_NONE">Nav</string>
+    <string name="SMS_STATUS_COMPLETE">Pabeigts</string>
+    <string name="SMS_STATUS_PENDING">Procesā…</string>
+    <string name="SMS_STATUS_FAILED">Neizdevās</string>
+    <string name="SMS_DELIVERED_TITLE">Ziņa nosūtīta</string>
+    
+    <!-- SMS delivery status -->
+    <string name="SMS_DELIVERED_RESULT_OK">Veiksmīgi nosūtīta %s-u</string>
+    <string name="SMS_DELIVERED_RESULT_FAILED">Neizdevās nosūtīt %s-u</string>
+    <string name="SMS_SENT_TITLE">Ziņas sūtīšana</string>
+    
+    <!-- SMS send status -->
+    <string name="SMS_SENT_RESULT_OK">Nosūtīta %s-u</string>
+    <string name="SMS_SENT_RESULT_ERROR_GENERIC_FAILUREK">Sistēmas kļūda</string>
+    <string name="SMS_SENT_RESULT_ERROR_NO_SERVICE">Nav zonas</string>
+    <string name="SMS_SENT_RESULT_ERROR_NULL_PDU">Nav PDU</string>
+    <string name="SMS_SENT_RESULT_ERROR_RADIO_OFF">Izslēgts radio</string>
+    
+    <!-- SMS recived -->
+    <string name="SMS_RECIVED_TITLE">Jauna ziņa</string>
+    <string name="SMS_RECIVED_COUNT">Neizlasītās ziņas: %d</string>
+    <string name="BoxAll">Visas ziņas</string>
+    <string name="BoxInbox">Saņemtās</string>
+    <string name="BoxSent">Sūtītās</string>
+    <string name="BoxDraft">Melnraksti</string>
+
+</resources>
